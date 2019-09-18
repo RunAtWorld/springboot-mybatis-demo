@@ -48,6 +48,8 @@
             <property name="suppressAllComments" value="true"/>
             <!--阻止生成的注释包含时间戳，默认为false-->
             <property name="suppressDate" value="true"/>
+             <!--开启字段注释-->
+            <property name="addRemarkComments" value="true"/>           
         </commentGenerator>
 
         <!--直接使用数据库连接URL，用户名、密码 -->
