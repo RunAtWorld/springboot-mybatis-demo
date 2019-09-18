@@ -156,3 +156,4 @@
 1. MyBatis Generator 英文手册 . http://mybatis.org/generator
 1. MyBatis Generator 中文手册 . http://docs.flycloud.me/docs/MBG/running/runningWithMaven.html
 1. Intellij IDEA 中使用 MyBatis-generator 自动生成 MyBatis 代码 . https://segmentfault.com/a/1190000009058867
+1. MyBatis Generator 详解 . https://www.cnblogs.com/softidea/p/5700722.html
