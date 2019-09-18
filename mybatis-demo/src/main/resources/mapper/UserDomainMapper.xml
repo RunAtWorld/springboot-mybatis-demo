@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lpf.userdomain.dao.UserDao" >
+  <sql id="BASE_TABLE">
+    t_user
+  </sql>
+
+  <sql id="BASE_COLUMN">
+    user_id,user_name,password,age,sex,email,memo,createTime,updateTime
+  </sql>
+  <insert id="insert" parameterType="com.lpf.userdomain.model.UserDomain">
+    INSERT INTO
+    <include refid="BASE_TABLE"/>
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      user_name,password,age
+      <if test="age != null">
+        age,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+    </trim>
+    <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+      #{userName, jdbcType=VARCHAR},#{password, jdbcType=VARCHAR},
+      <if test="age != null">
+        #{age, jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+  <select id="selectUsers" resultType="com.lpf.userdomain.model.UserDomain">
+    SELECT
+    <include refid="BASE_COLUMN"/>
+    FROM
+    <include refid="BASE_TABLE"/>
+  </select>
+
+
+
+</mapper>
