@@ -45,7 +45,7 @@
         <!-- 防止生成的代码中有很多注释，加入下面的配置控制 -->
         <commentGenerator>
             <!--阻止生成注释，默认为false-->
-            <property name="suppressAllComments" value="true"/>
+            <property name="suppressAllComments" value="false"/>
             <!--阻止生成的注释包含时间戳，默认为false-->
             <property name="suppressDate" value="true"/>
              <!--开启字段注释-->
