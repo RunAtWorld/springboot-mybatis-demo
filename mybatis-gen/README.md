@@ -1,4 +1,5 @@
-Intellij IDEA 中使用 MyBatis-generator 自动生成 MyBatis 代码
+### IDEAJ 使用 MyBatis-generator 插件生成 MyBatis 代码
+
 1、IDEA创建maven工程
 
 2、 在maven项目的pom.xml 添加mybatis-generator-maven-plugin 插件和MySQL数据库驱动依赖
@@ -107,3 +108,6 @@ Intellij IDEA 中使用 MyBatis-generator 自动生成 MyBatis 代码
             └─dev
                 └─mybatisgen
 ```
+
+### 参考
+1. Intellij IDEA 中使用 MyBatis-generator 自动生成 MyBatis 代码 . https://segmentfault.com/a/1190000009058867
